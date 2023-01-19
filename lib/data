@@ -1,0 +1,39 @@
+Column(
+        children: [
+          Padding(
+            padding: const EdgeInsets.all(8.0),
+            child: TextField(
+              controller: _name,
+              decoration: InputDecoration(
+                  border: OutlineInputBorder(), labelText: 'Enter Name'),
+            ),
+          ),
+          Padding(
+            padding: const EdgeInsets.all(8.0),
+            child: TextField(
+              controller: _email,
+              decoration: InputDecoration(
+                  border: OutlineInputBorder(), labelText: 'Enter Email'),
+            ),
+          ),
+          Padding(
+            padding: const EdgeInsets.all(8.0),
+            child: TextField(
+              controller: _phone,
+              decoration: InputDecoration(
+                  border: OutlineInputBorder(), labelText: 'Enter Phone'),
+            ),
+          ),
+          SizedBox(
+            height: 20,
+          ),
+          
+        ],
+      ),
+
+      mainAxisAlignment: MainAxisAlignment.center,
+      children: [
+        Text('Name:${name}'),
+        Text('Email:${email}'),
+        Text('Phone:${phone}'),
+      ],
